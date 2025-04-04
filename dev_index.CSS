@@ -1,105 +1,69 @@
 html, body {
     height: 100%;
-    overflow: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
+/* Página principal */
 .pag_principal {
-    background-color: #222121; /* Cor de fundo */
+    background-color: #222121;
+    padding: 15px; /* Reduzido em 5px */
 }
 
+/* Logo do LEEC */
 .logo-LEEC img {
     display: flex;
-    position: absolute;
-    top: 10vh;
-    right: 6vw;
     width: 80px;
-    height: auto; /* Mantém a proporção */
+    height: auto;
+    float: right;
+    margin-top: 85px; /* Reduzido em 5px */
 }
 
+/* Nome do curso */
 .nome-curso img {
-    display: flex;
-    position: absolute;
-    top: 8vh;
-    left: 3vw;
     width: 150px;
-    height: auto; /* Mantém a proporção */
+    height: auto;
     transition: all 0.3s ease;
+    margin-top: 65px; /* Reduzido em 5px */
 }
 
-main h2 {
+/* Títulos */
+main h2, .o_que_e_titulo, .objetivo_titulo {
     font-size: 18px;
     line-height: 2;
     color: #ffffff;
+    margin-top: 25px; /* Reduzido em 5px */
 }
 
-main p {
+/* Parágrafos */
+main p, .o_que_e, .objetivo {
     text-indent: 2em;
     font-size: 13px;
     line-height: 1.5;
     color: #ccc;
+    margin-top: 5px; /* Reduzido em 5px */
 }
 
+/* Lista */
+.o_que_e_lista {
+    margin-top: 15px; /* Reduzido em 5px */
+    padding-left: 2em;
+    color: #ccc;
+}
+
+/* Imagem do projeto */
 .projeto-50_10 {
-    display: flex;
-    position: absolute;
-    top: 24vh;
-    left: 14vw;
     width: 170px;
-    height: auto; /* Mantém a proporção */
-}
-.o_que_e_titulo{
-    display: flex;
-    position: absolute;
-    top: 31vh;
-    left: 14vw;
-    width: 150px;
-    height: auto; /* Mantém a proporção */
-    color: #ccc;
+    height: auto;
+    margin: 25px auto; /* Reduzido em 5px */
+    display: block;
 }
 
-.o_que_e {
-    display: flex;
-    position: absolute;
-    top: 37vh;
-    left: 12vw;
-    right: 12vw;
-    line-height: 1.5;
-}
-
-.o_que_e_lista{
-    display: flex;
-    position: absolute;
-    top: 61vh;
-    left: 12vw;
-    right: 12vw;
-    color: #ccc;
-}
-
-.objetivo_titulo{
-    display: flex;
-    position: absolute;
-    top: 75vh;
-    left: 12vw;
-    right: 12vw;
-    color: #ccc;
-}
-
-.objetivo{
-    display: flex;
-    position: absolute;
-    top: 80vh;
-    left: 12vw;
-    right: 12vw;
-    color: #ccc;
-    line-height: 1.5;
-}
-
-/* Botão de menu (ícone de hambúrguer) */
-/* Estilo do botão de abrir o menu (ícone de hambúrguer) */
+/* Botão de menu */
 .menu-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    display: inline-block; /* Mantido inalterado */
+    position: relative; /* Permite que ele role com o conteúdo */
     background-color: #ff6600;
     color: #fff;
     border: none;
@@ -108,39 +72,38 @@ main p {
     font-size: 20px;
     cursor: pointer;
     z-index: 1001;
+    margin-top: 20px; /* Mantido inalterado */
+    margin-left: 20px;
 }
 
 /* Menu lateral */
 .side-menu {
     position: fixed;
     top: 0;
-    left: -200px; /* Esconde o menu fora da tela */
+    left: -200px;
     width: 200px;
     height: 100%;
     background-color: #333;
     color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    transition: left 0.3s ease; /* Animação suave */
-    padding: 20px;
+    transition: left 0.3s ease;
+    padding: 15px; /* Reduzido em 5px */
     z-index: 1000;
-    display: none; /* Oculta o menu inicialmente */
+    display: none;
 }
 
-/* Exibe o menu quando a classe "open" é adicionada */
 .side-menu.open {
-    display: block; /* Exibe o menu */
-    left: 0; /* Move o menu para dentro da tela */
+    display: block;
+    left: 0;
 }
 
-/* Oculta o botão de abrir quando o menu está aberto */
 .side-menu.open ~ .menu-btn {
-    display: none; /* Esconde o botão de abrir */
+    display: none;
 }
 
-/* Botão para fechar o menu */
 .close-menu-btn {
     position: absolute;
-    top: 10px;
+    top: 5px; /* Reduzido em 5px */
     right: 10px;
     background-color: #ff6600;
     color: #fff;
@@ -149,23 +112,21 @@ main p {
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
-    display: none; /* Oculta o botão inicialmente */
+    display: none;
 }
 
-/* Exibe o botão de fechar quando o menu está aberto */
 .side-menu.open .close-menu-btn {
-    display: block; /* Exibe o botão */
+    display: block;
 }
 
-/* Lista de opções no menu */
 .side-menu ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 15px 0; /* Reduzido em 5px */
 }
 
 .side-menu ul li {
-    margin: 10px 0;
+    margin: 5px 0; /* Reduzido em 5px */
 }
 
 .side-menu ul li a {
