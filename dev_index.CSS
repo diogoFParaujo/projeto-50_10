@@ -5,10 +5,15 @@ html, body {
     padding: 0;
 }
 
+header, main {
+    margin-top: 0; /* Remove margens extras no topo */
+    padding-top: 0; /* Remove espaçamento interno no topo */
+}
+
 /* Página principal */
 .pag_principal {
     background-color: #222121;
-    padding: 15px; /* Reduzido em 5px */
+    padding: 10px; /* Reduzido em 5px */
 }
 
 /* Logo do LEEC */
@@ -17,7 +22,7 @@ html, body {
     width: 80px;
     height: auto;
     float: right;
-    margin-top: 85px; /* Reduzido em 5px */
+    margin-top: 30px; /* Reduzido em 5px */
 }
 
 /* Nome do curso */
@@ -25,38 +30,39 @@ html, body {
     width: 150px;
     height: auto;
     transition: all 0.3s ease;
-    margin-top: 65px; /* Reduzido em 5px */
+    margin-top: 20px; /* Reduzido em 5px */
 }
 
 /* Títulos */
 main h2, .o_que_e_titulo, .objetivo_titulo {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 2;
     color: #ffffff;
-    margin-top: 25px; /* Reduzido em 5px */
+    margin-top: 15px; /* Reduzido em 5px */
 }
 
 /* Parágrafos */
 main p, .o_que_e, .objetivo {
     text-indent: 2em;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     color: #ccc;
-    margin-top: 5px; /* Reduzido em 5px */
+    margin-top: 0px; /* Reduzido em 5px */
 }
 
 /* Lista */
 .o_que_e_lista {
-    margin-top: 15px; /* Reduzido em 5px */
+    margin-top: 10px; /* Reduzido em 5px */
     padding-left: 2em;
     color: #ccc;
 }
 
 /* Imagem do projeto */
 .projeto-50_10 {
+    color:#d48048;
     width: 170px;
     height: auto;
-    margin: 25px auto; /* Reduzido em 5px */
+    margin: 20px auto; /* Reduzido em 5px */
     display: block;
 }
 
@@ -87,7 +93,7 @@ main p, .o_que_e, .objetivo {
     color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
-    padding: 15px; /* Reduzido em 5px */
+    padding: 10px; /* Reduzido em 5px */
     z-index: 1000;
     display: none;
 }
@@ -103,7 +109,7 @@ main p, .o_que_e, .objetivo {
 
 .close-menu-btn {
     position: absolute;
-    top: 5px; /* Reduzido em 5px */
+    top: 0px; /* Reduzido em 5px */
     right: 10px;
     background-color: #ff6600;
     color: #fff;
@@ -122,11 +128,11 @@ main p, .o_que_e, .objetivo {
 .side-menu ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0; /* Reduzido em 5px */
+    margin: 10px 0; /* Reduzido em 5px */
 }
 
 .side-menu ul li {
-    margin: 5px 0; /* Reduzido em 5px */
+    margin: 0px 0; /* Reduzido em 5px */
 }
 
 .side-menu ul li a {
