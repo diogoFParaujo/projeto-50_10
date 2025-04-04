@@ -39,7 +39,7 @@ main p {
     position: absolute;
     top: 24vh;
     left: 14vw;
-    width: 150px;
+    width: 170px;
     height: auto; /* Mantém a proporção */
 }
 .o_que_e_titulo{
