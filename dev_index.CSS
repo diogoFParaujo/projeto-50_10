@@ -45,7 +45,7 @@ main p {
 .o_que_e_titulo{
     display: flex;
     position: absolute;
-    top: 29vh;
+    top: 31vh;
     left: 14vw;
     width: 150px;
     height: auto; /* Mantém a proporção */
@@ -55,7 +55,7 @@ main p {
 .o_que_e {
     display: flex;
     position: absolute;
-    top: 33vh;
+    top: 37vh;
     left: 12vw;
     right: 12vw;
     line-height: 1.5;
@@ -64,7 +64,7 @@ main p {
 .o_que_e_lista{
     display: flex;
     position: absolute;
-    top: 50vh;
+    top: 61vh;
     left: 12vw;
     right: 12vw;
     color: #ccc;
@@ -73,7 +73,7 @@ main p {
 .objetivo_titulo{
     display: flex;
     position: absolute;
-    top: 60vh;
+    top: 75vh;
     left: 12vw;
     right: 12vw;
     color: #ccc;
@@ -82,7 +82,7 @@ main p {
 .objetivo{
     display: flex;
     position: absolute;
-    top: 65vh;
+    top: 80vh;
     left: 12vw;
     right: 12vw;
     color: #ccc;
